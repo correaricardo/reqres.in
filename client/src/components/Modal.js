@@ -5,7 +5,7 @@ import './styles/Modal.css'
 
 const Modal = ({ closeModal, user }) => {
     return (
-        <div className="modal-content border-primary">
+        <div className="modal-content border-dark">
             <div className="modal-header">
                 <h4 className="modal-title font-weight-bold">User details</h4>
             </div>

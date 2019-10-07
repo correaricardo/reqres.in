@@ -3,7 +3,12 @@
     margin-top: 20px;
     border: none;
     border-radius: 8px;
-    background: linear-gradient(to right, #396afc, #2948ff); 
+    background: linear-gradient(to right, #0F2027, #2C5364); 
+}
+
+.center-block {
+    display: table;
+    margin: auto;
 }
 
 .user-card {
