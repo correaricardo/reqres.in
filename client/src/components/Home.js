@@ -2,13 +2,13 @@
 import React from 'react'
 // Components
 import Welcome from './Welcome'
-import UserListPage from '../containers/UserListPage'
+import UserListContainer from '../containers/UserListContainer'
 
 const Exercises = ({data}) => (
 
 	<React.Fragment>
 		<Welcome/>
-		<UserListPage/>
+		<UserListContainer/>
 	</React.Fragment>
 
 )

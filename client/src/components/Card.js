@@ -5,7 +5,7 @@ import emptyAvatar from '../images/emptyAvatar.png'
 // Styles
 import './styles/Card.css'
 
-const Card = ({ email, first_name, last_name, avatar }) => {
+const Card = ({ email, first_name, last_name, avatar, id, onClick }) => {
 
     return (
 		<div className="card mx-auto user-card">
@@ -14,7 +14,7 @@ const Card = ({ email, first_name, last_name, avatar }) => {
     	            <div className="col-6">
     	                <img src={avatar || emptyAvatar} className="float-right avatar" alt="avatar"/>
     	            </div> 
-    	            <div className="col-6 user-card-data">
+    	            <div className="col-6 user-card-data" onClick={(e) => onClick(e, {email, first_name, last_name, avatar, id})}>
     	                <h1>{`${first_name} ${last_name}`}</h1>
     	            </div>
     	        </div>
