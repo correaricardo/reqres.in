@@ -18,9 +18,9 @@ const Modal = ({ closeModal, user }) => {
                     </div>
                     <div className="col-9">
                         <div className="center-block">
-                            <h5><span class="font-weight-bold">Id:</span> {user.id}</h5>
-                            <h5><span class="font-weight-bold">Email:</span> {user.email}</h5>
-                            <h5><span class="font-weight-bold">Name:</span> {`${user.first_name} ${user.last_name}`}</h5>
+                            <h5><span className="font-weight-bold">Id:</span> {user.id}</h5>
+                            <h5><span className="font-weight-bold">Email:</span> {user.email}</h5>
+                            <h5><span className="font-weight-bold">Name:</span> {`${user.first_name} ${user.last_name}`}</h5>
                         </div>
                     </div>
                 </div>
