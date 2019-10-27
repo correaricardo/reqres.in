@@ -11,5 +11,5 @@ Para la ejecución del aplicativo en cuestión, los pasos **en consola** son los
 
 ## Requerimientos
 
-- Node js (LTS)
+- node.js (LTS)
 - npm
