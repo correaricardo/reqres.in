@@ -8,3 +8,8 @@ Para la ejecución del aplicativo en cuestión, los pasos **en consola** son los
 2. cd reqres.in
 3. npm install
 4. npm run dev
+
+## Requerimientos
+
+- Node js (LTS)
+- npm
