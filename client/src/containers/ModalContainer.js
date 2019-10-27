@@ -14,9 +14,7 @@ class ModalContainer extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = {
-            modalIsOpen: false
-        };
+        this.state = { modalIsOpen: false };
         this.closeModal = this.closeModal.bind(this)
     }
 
@@ -40,7 +38,6 @@ class ModalContainer extends React.Component {
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
-                    contentLabel="Example Modal"
                     ariaHideApp={false}
                     className="modal-dialog modal-dialog-centered"
                 >
@@ -48,7 +45,6 @@ class ModalContainer extends React.Component {
                       closeModal={this.closeModal}
                       user={this.props.modalProps.user}
                     />
-
                 </ReactModal>
             </div>
         )

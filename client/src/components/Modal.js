@@ -5,7 +5,7 @@ import './styles/Modal.css'
 
 const Modal = ({ closeModal, user }) => {
     return (
-        <div className="modal-content border-dark">
+        <div className="modal-content border-primary">
             <div className="modal-header">
                 <h4 className="modal-title font-weight-bold">User details</h4>
             </div>
@@ -26,7 +26,7 @@ const Modal = ({ closeModal, user }) => {
                 </div>
             </div>
             <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={closeModal}>Close</button>
+                <button type="button" className="btn btn-primary" onClick={closeModal}>Close</button>
             </div>
         </div>
   )

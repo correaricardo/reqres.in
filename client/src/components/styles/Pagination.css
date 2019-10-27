@@ -1,0 +1,4 @@
+.pagination li {
+  position: relative;
+  z-index: 0;
+}

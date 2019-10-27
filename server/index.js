@@ -21,7 +21,9 @@ app.get('/users', (req, res) => {
     let page = req.query.page;
     api_helper.apiCall(`https://reqres.in/api/users?page=${page}`)
     .then(response => {
-        res.json(response)
+        res.setTimeout(1000, function(){
+            res.json(response)
+        });
     })
     .catch(error => {
         res.send(error)

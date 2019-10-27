@@ -1,6 +1,8 @@
 import {fetchUsersPending, fetchUsersSuccess, fetchUsersError} from '../actions/index';
 
-function fetchUsers(url) {            
+function fetchUsers(url, pageNumber) {
+    
+    url = url + pageNumber;
     
     let config = {
     method: 'GET',
@@ -18,7 +20,7 @@ function fetchUsers(url) {
             if(res.error) {
                 throw(res.error);
             }
-            dispatch(fetchUsersSuccess(res.data));
+            dispatch(fetchUsersSuccess(res));
         })
         .catch(error => {
             dispatch(fetchUsersError(error));

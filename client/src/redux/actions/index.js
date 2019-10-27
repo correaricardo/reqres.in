@@ -29,17 +29,19 @@ export const fetchUsersPending = () => {
     }
 }
 
-export const fetchUsersSuccess = users => {
+export const fetchUsersSuccess = data => {
     return {
         type: FETCH_USERS_SUCCESS,
-        payload: users
+        total_pages: data.total_pages,
+        current_page: data.page,
+        users: data.data
     }
 }
 
 export const fetchUsersError = error => {
     return {
         type: FETCH_USERS_ERROR,
-        error: error
+        payload: error
     }
 }
 
