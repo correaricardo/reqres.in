@@ -15,7 +15,7 @@ const UserList = ({users, onClick}) => {
 		items.push(
 		<tr key={user.id}>
 			<td className="text-center align-middle"><img src={user.avatar || emptyAvatar} className="userlist-avatar" alt="avatar"/></td>
-			<td className="text-center align-middle" onClick={(e) => onClick(e, {...user})}><a href="#">{`${user.first_name} ${user.last_name}`}</a></td>
+			<td className="text-center align-middle"><a onClick={(e) => onClick(e, {...user})} href="#">{`${user.first_name} ${user.last_name}`}</a></td>
 		</tr>);
 	});
 
