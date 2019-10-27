@@ -12,6 +12,7 @@ function fetchUsers(url, pageNumber) {
         }
     }
     
+    // Se gestiona la petición hacia la api y se realiza un dispatch hasta la acción
     return function(dispatch) {
         dispatch(fetchUsersPending());
         fetch(url, config)
