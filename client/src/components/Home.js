@@ -3,7 +3,7 @@ import React from 'react'
 // Containers
 import UserListContainer from '../containers/UserListContainer'
 
-const Exercises = ({data}) => (
+const Home = () => (
 
 	<React.Fragment>
 		<UserListContainer/>
@@ -11,4 +11,4 @@ const Exercises = ({data}) => (
 
 )
 
-export default Exercises
+export default Home
